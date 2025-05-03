@@ -1,0 +1,1 @@
+Olá, instruções para o site da loja
