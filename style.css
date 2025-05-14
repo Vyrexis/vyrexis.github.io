@@ -1,3 +1,19 @@
 body{
     background-color: aliceblue;
 }
+
+.logo{
+    border-radius: 50%;
+}
+
+.aff{
+    position: relative;
+    text-align: center;
+    word-spacing: 50px;
+    
+    }
+
+.a1{
+    text-decoration: none;
+    color: black;
+}
