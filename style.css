@@ -1,19 +1,63 @@
 body{
     background-color: aliceblue;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-color: black;
+    padding: 20px;
+}
+
+footer{
+    background-color: black;
+    position: relative;
+    top: 500px;
+    padding: 20px;
+    color: white;
+
+}
+
+.barradecima{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    }
+
+.pesquisa input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.a1{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.a1:hover{
+    text-decoration: underline;
 }
 
 .logo{
     border-radius: 50%;
+    width: 150px;
 }
 
-.aff{
+.logohome{
+    text-align: left;
     position: relative;
-    text-align: center;
-    word-spacing: 50px;
-    
-    }
-
-.a1{
-    text-decoration: none;
-    color: black;
+    top: 0;
 }
+
