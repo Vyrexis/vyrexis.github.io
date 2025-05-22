@@ -17,7 +17,7 @@ footer{
     top: 500px;
     padding: 20px;
     color: white;
-
+    margin-bottom: auto;
 }
 
 .barradecima{
@@ -31,19 +31,21 @@ footer{
     justify-content: center;
     gap: 40px;
     margin-bottom: 20px;
+    font-size: 30px;
     }
 
 .pesquisa input{
     padding: 10px;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 30px;
     outline: none;
 }
 
 .a1{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    
 }
 
 .a1:hover{
@@ -51,8 +53,9 @@ footer{
 }
 
 .logo{
-    border-radius: 50%;
     width: 150px;
+    border: 5px;
+    border-color: orange;
 }
 
 .logohome{
@@ -61,3 +64,35 @@ footer{
     top: 0;
 }
 
+.botaoanuncio{
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #86b162;
+    color: #ffffff;
+    
+}
+
+.botaoanuncio:hover{
+    background-color: #a2cd7f;
+    transition-duration: 0.30s;
+    cursor: pointer;
+}
+
+.divdobotao{
+    margin-right: auto;
+    text-align: right;
+}
+
+.input-search {
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
+  background-size: 20px 20px;
+  background-color: white;
+  cursor: text;
+}
