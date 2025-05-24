@@ -1,89 +1,66 @@
-body{
-    background-color: aliceblue;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: black;
-    padding: 20px;
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
 }
 
-footer{
-    background-color: black;
-    position: relative;
-    top: 500px;
-    padding: 20px;
-    color: white;
-    margin-bottom: auto;
+/* ESTRUTURA FLEXÍVEL */
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-.barradecima{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+main {
+  flex: 1;
 }
 
-.barra{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    }
-
-.pesquisa input{
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    outline: none;
+/* HEADER */
+header {
+  background-color: rgb(186, 161, 161);
+  padding: 20px;
+  color: white;
 }
 
-.a1{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    
+/* FOOTER RESPONSIVO */
+footer {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.a1:hover{
-    text-decoration: underline;
+/* TOPO */
+.barradecima {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.logo{
-    width: 150px;
-    border: 5px;
-    border-color: orange;
+.barra {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  flex-wrap: wrap;
 }
 
-.logohome{
-    text-align: left;
-    position: relative;
-    top: 0;
-}
-
-.botaoanuncio{
-    display: flex;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    background-color: #86b162;
-    color: #ffffff;
-    
-}
-
-.botaoanuncio:hover{
-    background-color: #a2cd7f;
-    transition-duration: 0.30s;
-    cursor: pointer;
-}
-
-.divdobotao{
-    margin-right: auto;
-    text-align: right;
+/* INPUT DE PESQUISA */
+.pesquisa input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  outline: none;
 }
 
 .input-search {
@@ -95,4 +72,78 @@ footer{
   background-size: 20px 20px;
   background-color: white;
   cursor: text;
+}
+
+/* LINKS */
+.a1 {
+  color: white;
+  text-decoration: none;
+}
+
+.a1:hover {
+  text-decoration: underline;
+}
+
+/* LOGO */
+.logo {
+  width: 150px;
+  border: 5px solid orange;
+}
+
+.logohome {
+  text-align: left;
+  position: relative;
+}
+
+/* BOTÃO DE ANÚNCIO */
+.botaoanuncio {
+  display: flex;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: #86b162;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botaoanuncio:hover {
+  background-color: #a2cd7f;
+}
+
+.divdobotao {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* MEDIA QUERY RESPONSIVA */
+@media (max-width: 768px) {
+  .barradecima,
+  .barra {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .barra {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pesquisa input,
+  .input-search,
+  .botaoanuncio {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .divdobotao {
+    margin: 10px auto;
+    text-align: center;
+  }
 }
