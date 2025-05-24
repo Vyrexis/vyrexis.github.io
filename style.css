@@ -21,7 +21,6 @@ main {
   flex: 1;
 }
 
-/* HEADER */
 header {
   background-color: rgb(186, 161, 161);
   padding: 20px;
@@ -38,14 +37,14 @@ footer {
 }
 
 /* TOPO */
-.barradecima {
+.cabecario {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.barra {
+.navegacao {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -117,16 +116,43 @@ footer {
   text-align: right;
 }
 
+.cards{
+  width: 250px;
+  height: 350px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 20px 20px 20px gray;
+  border-radius: 10%;
+  border: 50px black;
+}
+
+.sabermais{
+  background-color: orange;
+  border: none;
+  border-radius: 10%;
+  width: 100px;
+  padding: 10px;
+  margin: 20px;
+  transition: ease 100ms;
+  cursor: pointer;
+}
+
+.sabermais:hover{
+  background-color: rgb(255, 192, 75);
+  color: black;
+}
+
 /* MEDIA QUERY RESPONSIVA */
 @media (max-width: 768px) {
-  .barradecima,
-  .barra {
+  .cabecario,
+  .navegacao {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
-  .barra {
+  .navegacao {
     font-size: 20px;
     text-align: center;
   }
