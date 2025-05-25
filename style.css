@@ -19,12 +19,14 @@ body {
 
 main {
   flex: 1;
+
 }
 
 header {
-  background-color: rgb(186, 161, 161);
+  background-color: black;
   padding: 20px;
-  color: white;
+  border: 5px solid gray;
+  border-radius: 0px 0px 15px 15px;
 }
 
 /* FOOTER RESPONSIVO */
@@ -33,7 +35,6 @@ footer {
   padding: 20px;
   color: white;
   text-align: center;
-  margin-top: 40px;
 }
 
 /* TOPO */
@@ -46,10 +47,11 @@ footer {
 
 .navegacao {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 40px;
-  margin-bottom: 20px;
-  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
   flex-wrap: wrap;
 }
 
@@ -58,35 +60,38 @@ footer {
   padding: 10px;
   border: none;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 20px;
   outline: none;
+  border: 3px solid rgba(0, 0, 0, 0.353);
 }
 
 .input-search {
   padding: 10px 40px 10px 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+ 
   background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
   background-size: 20px 20px;
   background-color: white;
   cursor: text;
 }
 
-/* LINKS */
+/* I: links de navegação */
 .a1 {
   color: white;
   text-decoration: none;
+  transition: 0.8s ease;
 }
 
 .a1:hover {
   text-decoration: underline;
 }
 
-/* LOGO */
+/* K: LOGO */
 .logo {
-  width: 150px;
-  border: 5px solid orange;
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid gray;
 }
 
 .logohome {
@@ -117,14 +122,30 @@ footer {
 }
 
 .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
   width: 250px;
   height: 350px;
   padding: 10px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
   text-align: center;
   background-color: rgb(255, 255, 255);
   box-shadow: 20px 20px 20px gray;
   border-radius: 10%;
   border: 50px black;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.05);
 }
 
 .sabermais{
