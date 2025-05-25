@@ -8,7 +8,6 @@
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: aliceblue;
 }
 
 /* ESTRUTURA FLEXÍVEL */
@@ -19,13 +18,16 @@ body {
 
 main {
   flex: 1;
-
+  background-color: white;
+  /* background-image: url(logotipo.png);
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
+  background-position: center; */
 }
 
 header {
   background-color: black;
   padding: 20px;
-  border: 5px solid gray;
   border-radius: 0px 0px 15px 15px;
 }
 
@@ -35,6 +37,7 @@ footer {
   padding: 20px;
   color: white;
   text-align: center;
+  border-radius: 15px 15px 0px 0px;
 }
 
 /* TOPO */
@@ -47,7 +50,7 @@ footer {
 
 .navegacao {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 40px;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -57,6 +60,7 @@ footer {
 
 /* INPUT DE PESQUISA */
 .pesquisa input {
+  display: flex;
   padding: 10px;
   border: none;
   border-radius: 10px;
@@ -65,11 +69,11 @@ footer {
   border: 3px solid rgba(0, 0, 0, 0.353);
 }
 
+/* I:logo de lupa*/
 .input-search {
   padding: 10px 40px 10px 10px;
   font-size: 16px;
   border-radius: 5px;
- 
   background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
   background-size: 20px 20px;
   background-color: white;
@@ -106,14 +110,15 @@ footer {
   border: none;
   border-radius: 10px;
   font-size: 30px;
-  background-color: #86b162;
+  background-color: orange;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .botaoanuncio:hover {
-  background-color: #a2cd7f;
+  background-color: white;
+  color: orange;
 }
 
 .divdobotao {
@@ -131,7 +136,7 @@ footer {
 .card{
   width: 250px;
   height: 350px;
-  padding: 10px;
+  
   margin-top: 35px;
   margin-bottom: 35px;
   margin-right: 30px;
@@ -139,8 +144,8 @@ footer {
   text-align: center;
   background-color: rgb(255, 255, 255);
   box-shadow: 20px 20px 20px gray;
-  border-radius: 10%;
-  border: 50px black;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid black;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -148,13 +153,48 @@ footer {
   transform: scale(1.05);
 }
 
+.cardimagem img{
+  width: 160px;
+  height: 160px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  background-size: cover;
+}
+
+.cardstext{
+  margin-top: 10px;
+}
+
+.cardtitulo{
+  font-weight: bold;
+  font-size: xx-large;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.carddescricao{
+  font-size: small;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .sabermais{
   background-color: orange;
-  border: none;
-  border-radius: 10%;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
   width: 100px;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   transition: ease 100ms;
   cursor: pointer;
 }
@@ -163,6 +203,96 @@ footer {
   background-color: rgb(255, 192, 75);
   color: black;
 }
+
+.textoinfor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.linksobre{
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.contato{
+  margin-left: 53px;
+}
+
+
+.trecos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.redessociais{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*I: parte de login*/
+/*
+.contentlogin{
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 10%;
+  border: 2px solid black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.268);
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inputlogin{
+  width: 150px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+.confirmar{
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  width: 100px;
+  border-radius: 5px 5px;
+  padding: 10px;
+  border: 2px solid black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.confirmar:hover{
+  background-color: black;
+  color: white;
+}
+*/
 
 /* MEDIA QUERY RESPONSIVA */
 @media (max-width: 768px) {
