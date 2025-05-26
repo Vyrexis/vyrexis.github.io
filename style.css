@@ -294,6 +294,72 @@ footer {
 }
 */
 
+/* Sugestão botão
+
+.inputproduto{
+  width: 190px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 3px;
+  background-color: white;
+}
+
+.textossugestao{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.sugestao{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: left;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.268);
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 1;
+}
+
+.botaosugestao{
+  display: flex;
+  justify-content: center;
+}
+
+.confirmarsugestao{
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  width: 100px;
+  border-radius: 5px 5px;
+  padding: 10px;
+  border: 2px solid black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.confirmarsugestao:hover{
+  background-color: black;
+  color: white;
+}
+
+.contentsugestao{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+} */
+
 /* MEDIA QUERY RESPONSIVA */
 @media (max-width: 768px) {
   .cabecario,
