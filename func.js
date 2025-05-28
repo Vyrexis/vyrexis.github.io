@@ -4,31 +4,46 @@ function crescercard(botao) {
   botao.textContent = card.classList.contains('expanded') ? 'Menos' : 'Saber mais';
 }
 
-// Função para abrir a tela de login
-function abrirLogin() {
-  document.querySelector(".contentlogin").style.display = "flex";
-}
+// Exibe o formulário ao clicar no botão "Sugerir Produto"
+document.addEventListener('DOMContentLoaded', () => {
+    const botaoSugerir = document.querySelector('.botaosugerir');
+    const formSugestao = document.getElementById('formSugestao');
 
-// Função para enviar os dados e fechar a tela
-function enviarDados() {
-  const nome = document.getElementById("nome").value;
-  const idade = document.getElementById("idade").value;
-  const email = document.getElementById("email").value;
+    botaoSugerir.addEventListener('click', () => {
+        formSugestao.style.display = 'flex';
+    });
 
-  // Verificação simples
-  if (!nome || !idade || !email) {
-    alert("Preencha todos os campos!");
-    return;
-  }
+    // Sugestões automáticas de produtos ao digitar
+    const produtos = ['iPhone 14', 'iPhone 13', 'Galaxy S23', 'Galaxy A54', 'Redmi Note 12', 'Moto G82', 'Poco X5', 'Asus ROG Phone'];
 
-  // Mostrar os dados (simulando envio)
-  alert(`Dados enviados com sucesso!\n\nNome: ${nome}\nIdade: ${idade}\nEmail: ${email}`);
+    const inputProduto = document.getElementById('inputProduto');
+    inputProduto.addEventListener('input', () => {
+        const valor = inputProduto.value.toLowerCase();
+        const sugestao = produtos.find(prod => prod.toLowerCase().startsWith(valor));
+        if (sugestao && valor) {
+            inputProduto.value = sugestao;
+        }
+    });
+});
 
-  // Limpar os campos
-  document.getElementById("nome").value = "";
-  document.getElementById("idade").value = "";
-  document.getElementById("email").value = "";
+// Envia as informações preenchidas
+function enviarSugestao() {
+    const produto = document.getElementById('inputProduto').value;
+    const marca = document.getElementById('inputMarca').value;
+    const tipo = document.getElementById('inputTipo').value;
 
-  // Fechar a tela
-  document.querySelector(".contentlogin").style.display = "none";
+    if (!produto || !marca || !tipo) {
+        alert('Preencha todos os campos.');
+        return;
+    }
+
+    const dados = `
+📦 Sugestão de Produto:
+- Produto: ${produto}
+- Marca: ${marca}
+- Tipo: ${tipo}
+`;
+
+    // Aqui você pode enviar para o WhatsApp, API, ou salvar localmente
+    alert(dados); // Exibe como exemplo
 }

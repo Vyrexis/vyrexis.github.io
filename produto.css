@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 /* ESTRUTURA FLEXÍVEL */
@@ -26,14 +26,14 @@ main {
 }
 
 header {
-  background-color: black;
+  background-color: #0D1B2A;
   padding: 20px;
   border-radius: 0px 0px 15px 15px;
 }
 
 /* FOOTER RESPONSIVO */
 footer {
-  background-color: black;
+  background-color: #0D1B2A;
   padding: 20px;
   color: white;
   text-align: center;
@@ -104,10 +104,10 @@ footer {
 }
 
 /* BOTÃO DE ANÚNCIO */
-.botaoanuncio {
+.botaocarrinho {
   display: flex;
   padding: 10px;
-  border: 2px solid orange;
+  border: 2px solid #F9A826;
   border-radius: 10px;
   font-size: 22.5px;
   background-color: transparent;
@@ -116,11 +116,12 @@ footer {
   transition: 0.5s;
 }
 
-.botaoanuncio:hover {
+.botaocarrinho:hover {
   transform: scale(1.05);
+  color: #D48806;
 }
 
-.divdobotao {
+.divdobotaocarrinho {
   margin-left: auto;
   text-align: right;
 }
@@ -146,6 +147,7 @@ footer {
 
 .botaosugerir:hover {
   transform: scale(1.05);
+  color: #D48806;
 }
 
 .cards{
@@ -163,8 +165,8 @@ footer {
   margin-right: 30px;
   margin-left: 30px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 20px 20px 20px gray;
+  background-color: #Ffffff;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px 10px 10px 10px;
   border: 2px solid black;
   transition: transform 0.5s ease-in-out;
@@ -273,7 +275,7 @@ footer {
 }
 
 .redessociais{
-  margin-left: 53px;
+  margin-left: 60px;
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -341,10 +343,7 @@ footer {
   color: white;
 }
 
-
-/* Sugestão botão
-
-.inputproduto{
+.inputprodutocss{
   width: 190px;
   border-radius: 5px 5px 5px 5px;
   outline: none;
@@ -362,20 +361,53 @@ footer {
 
 .sugestao{
   position: static;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: left;
+  align-items: center;
   width: 400px;
-  height: 300px;
+  height: 350px;
   border-radius: 10px 10px 10px 10px;
-  border: 2px solid black;
+  border: 2px solid orange;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.268);
-  background-color: white;
-  color: black;
+  background-color: #0D1B2A;
+  color: white;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
   z-index: 1;
+}
+
+.fecharsugestao{
+  text-decoration: none;
+  color: white;
+  background-color: #0D1B2A;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2px;
+  width: 100px;
+  border: 2px solid orange;
+}
+
+.divfecharsugestao{
+  position: static;
+  padding: 20px;
+  text-align: right;
+}
+
+.textoemailsugestao{
+    margin-top: 50px;
+}
+
+.linkemailsugestao{
+  text-decoration: none;
+  color: white;
+  background-color: #0D1B2A;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2px;
+  width: 250px;
+  border: 2px solid orange;
 }
 
 .botaosugestao{
@@ -401,12 +433,13 @@ footer {
 }
 
 .contentsugestao{
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
-} */
+  z-index: 2;
+}
 
 /* MEDIA QUERY RESPONSIVA */
 @media (max-width: 768px) {
