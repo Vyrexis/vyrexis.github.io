@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 /* ESTRUTURA FLEXÍVEL */
@@ -19,26 +19,78 @@ body {
 main {
   flex: 1;
   background-color: white;
-  /* background-image: url(logotipo.png);
-  background-repeat: no-repeat;
-  background-size: 70% 100%;
-  background-position: center; */
+  padding: 30px;
 }
 
 header {
-  background-color: black;
+  background-color: #0D1B2A;
   padding: 20px;
   border-radius: 0px 0px 15px 15px;
 }
 
 /* FOOTER RESPONSIVO */
 footer {
-  background-color: black;
+  background-color: #0D1B2A;
   padding: 20px;
   color: white;
   text-align: center;
   border-radius: 15px 15px 0px 0px;
 }
+
+.destaque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destaque h1 {
+  margin-bottom: 20px;
+  font-size: xx-large;
+}
+
+.destaque h2 {
+  font-size: larger;
+}
+
+.img-destaque {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.info h2 {
+  font-size: larger;
+  margin-bottom: 20px;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info ul, li::before {
+  content: '✓';
+  font-weight: bold;
+}
+
+.info p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 /* TOPO */
 .cabecario {
@@ -68,12 +120,11 @@ footer {
 .a1:hover {
   text-decoration: underline;
 }
-
 /* K: LOGO */
 .logo {
   width: 120px;
   border-radius: 50%;
-  border: 3px solid gray;
+  border: 3px solid orange;
 }
 
 .logohome {
@@ -81,27 +132,6 @@ footer {
   position: relative;
 }
 
-/* BOTÃO DE ANÚNCIO */
-.botaoconta {
-  display: flex;
-  padding: 10px;
-  border: 2px solid orange;
-  border-radius: 10px;
-  font-size: 22.5px;
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.botaoconta:hover {
-  transform: scale(1.05);
-}
-
-.divdobotaoconta {
-  margin-left: auto;
-  text-align: right;
-}
 
 .textoinfor{
   display: flex;
@@ -131,7 +161,7 @@ footer {
 }
 
 .redessociais{
-  margin-left: 53px;
+  margin-left: 60px;
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -140,62 +170,6 @@ footer {
   gap: 5px;
 }
 
-/*I: parte de login*/
-/*
-.contentlogin{
-  z-index: 1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 300px;
-  border-radius: 10%;
-  border: 2px solid black;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.268);
-  background-color: white;
-  color: black;
-  font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-}
-
-.inputlogin{
-  width: 150px;
-  border-radius: 5px 5px 5px 5px;
-  outline: none;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding: 3px;
-}
-
-.confirmar{
-  background-color: white;
-  color: black;
-  margin-top: 30px;
-  width: 100px;
-  border-radius: 5px 5px;
-  padding: 10px;
-  border: 2px solid black;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-
-.confirmar:hover{
-  background-color: black;
-  color: white;
-}
-*/
 
 /* MEDIA QUERY RESPONSIVA */
 @media (max-width: 768px) {

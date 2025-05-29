@@ -65,9 +65,8 @@ footer {
   border: none;
   border-radius: 10px;
   font-size: 22.5px;
-
   outline: none;
-  border: 2px solid gray;
+  border: 3px solid orange;
 }
 
 /* I:logo de lupa*/
@@ -95,35 +94,12 @@ footer {
 .logo {
   width: 120px;
   border-radius: 50%;
-  border: 3px solid gray;
+  border: 3px solid orange;
 }
 
 .logohome {
   text-align: left;
   position: relative;
-}
-
-/* BOTÃO DE ANÚNCIO */
-.botaocarrinho {
-  display: flex;
-  padding: 10px;
-  border: 2px solid #F9A826;
-  border-radius: 10px;
-  font-size: 22.5px;
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.botaocarrinho:hover {
-  transform: scale(1.05);
-  color: #D48806;
-}
-
-.divdobotaocarrinho {
-  margin-left: auto;
-  text-align: right;
 }
 
 .divdobotaosugerir {
@@ -147,7 +123,7 @@ footer {
 
 .botaosugerir:hover {
   transform: scale(1.05);
-  color: #D48806;
+  color: rgb(211, 185, 136);
 }
 
 .cards{
@@ -223,6 +199,25 @@ footer {
   -webkit-line-clamp: unset;
 }
 
+.comprar{
+  background-color: orange;
+  color: white;
+  font-size: medium;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: ease 100ms;
+  cursor: pointer;
+}
+
+.comprar:hover{
+  background-color: #0D1B2A;
+  border: 2px solid orange;
+}
+
+
 .divbotaosaber {
   display: flex;
   flex-direction: column;
@@ -235,16 +230,17 @@ footer {
   color: white;
   border: 2px solid black;
   border-radius: 10px 10px 10px 10px;
-  width: 100px;
-  padding: 10px;
+  width: 60px;
+  font-size: medium;
+  padding: 5px;
   margin-top: 10px;
   transition: ease 100ms;
   cursor: pointer;
 }
 
 .sabermais:hover{
-  background-color: rgb(255, 192, 75);
-  color: black;
+  background-color: #0D1B2A;
+  border: 2px solid orange;
 }
 
 .textoinfor{
@@ -360,8 +356,9 @@ footer {
 }
 
 .sugestao{
+  text-align: center;
   position: static;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -381,33 +378,54 @@ footer {
 .fecharsugestao{
   text-decoration: none;
   color: white;
+  font-size: large;
   background-color: #0D1B2A;
   text-align: center;
   border-radius: 10px 10px 10px 10px;
-  padding: 2px;
-  width: 100px;
   border: 2px solid orange;
+  width: 100px;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.fecharsugestao:hover {
+  transform: scale(1.05);
+  color: rgb(211, 185, 136);
 }
 
 .divfecharsugestao{
+  display: flex;
+  justify-content: right;
+  align-items: start;
   position: static;
-  padding: 20px;
-  text-align: right;
 }
 
 .textoemailsugestao{
-    margin-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  position: static;
 }
 
 .linkemailsugestao{
   text-decoration: none;
   color: white;
-  background-color: #0D1B2A;
+  font-size: large;
   text-align: center;
   border-radius: 10px 10px 10px 10px;
-  padding: 2px;
+  padding: 5px;
   width: 250px;
   border: 2px solid orange;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.linkemailsugestao:hover {
+  color: rgb(211, 185, 136);
+  transform: scale(1.05);
 }
 
 .botaosugestao{

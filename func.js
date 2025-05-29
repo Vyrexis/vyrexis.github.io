@@ -1,7 +1,7 @@
 function crescercard(botao) {
   const card = botao.closest('.card');
   card.classList.toggle('expanded');
-  botao.textContent = card.classList.contains('expanded') ? 'Menos' : 'Saber mais';
+  botao.textContent = card.classList.contains('expanded') ? 'Menos' : 'Mais';
 }
 
 // Exibe o formulário ao clicar no botão "Sugerir Produto"
@@ -47,3 +47,26 @@ function enviarSugestao() {
     // Aqui você pode enviar para o WhatsApp, API, ou salvar localmente
     alert(dados); // Exibe como exemplo
 }
+
+// parte da pesquisa
+
+// Executa a busca ao apertar Enter
+document.addEventListener("DOMContentLoaded", function () {
+    const inputPesquisa = document.getElementById("pesquisa");
+    const cards = document.querySelectorAll(".card");
+
+    inputPesquisa.addEventListener("input", function () {
+        const termo = inputPesquisa.value.toLowerCase();
+
+        cards.forEach(card => {
+            const titulo = card.querySelector(".cardtitulo").textContent.toLowerCase();
+            const descricao = card.querySelector(".carddescricao").textContent.toLowerCase();
+
+            if (titulo.includes(termo) || descricao.includes(termo)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
