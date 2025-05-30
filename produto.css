@@ -135,7 +135,7 @@ footer {
 
 .card{
   width: 250px;
-  max-height: 380px;
+  max-height: 390px;
   margin-top: 35px;
   margin-bottom: 35px;
   margin-right: 30px;
@@ -169,7 +169,7 @@ footer {
 
 .cardtitulo{
   font-weight: bold;
-  font-size: xx-large;
+  font-size: larger;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -177,9 +177,15 @@ footer {
   margin-right: 5px;
 }
 
+.cardpreco{
+  margin-top: 3px;
+  font-size: larger;
+}
+
 .card .carddescricao{
   display: -webkit-box;
   font-size: small;
+  text-align: justify;
   margin-top: 15px;
   margin-bottom: 2px;
   margin-left: 8px;
@@ -200,6 +206,7 @@ footer {
 }
 
 .comprar{
+  text-decoration: none;
   background-color: orange;
   color: white;
   font-size: medium;
