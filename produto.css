@@ -48,7 +48,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.navegacao {
+/* .navegacao {
   display: flex;
   justify-content: space-around;
   gap: 40px;
@@ -56,7 +56,7 @@ footer {
   margin-bottom: 15px;
   font-size: 20px;
   flex-wrap: wrap;
-}
+} */
 
 /* INPUT DE PESQUISA */
 .pesquisa input {
@@ -119,6 +119,34 @@ footer {
   color: white;
   cursor: pointer;
   transition: 0.5s;
+}
+
+.divdosbotoes{
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+.botoes{
+   padding: 10px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.botoes:hover{
+  transform: scale(1.05);
+  color: rgb(211, 185, 136);
+  text-decoration: underline;
 }
 
 .botaosugerir:hover {

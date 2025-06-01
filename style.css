@@ -100,7 +100,28 @@ footer {
   flex-wrap: wrap;
 }
 
-.navegacao {
+/* .navegacao {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  flex-wrap: wrap;
+} */
+
+/* I: links de navegação */
+/* .a1 {
+  color: white;
+  text-decoration: none;
+  transition: 0.8s ease;
+} */
+/* 
+.a1:hover {
+  text-decoration: underline;
+} */
+
+.divdosbotoes{
   display: flex;
   justify-content: space-around;
   gap: 40px;
@@ -110,16 +131,24 @@ footer {
   flex-wrap: wrap;
 }
 
-/* I: links de navegação */
-.a1 {
+.botoes{
+   padding: 10px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: transparent;
   color: white;
+  cursor: pointer;
+  transition: 0.5s;
   text-decoration: none;
-  transition: 0.8s ease;
 }
 
-.a1:hover {
+.botoes:hover{
+  transform: scale(1.05);
+  color: rgb(211, 185, 136);
   text-decoration: underline;
 }
+
 /* K: LOGO */
 .logo {
   width: 120px;
