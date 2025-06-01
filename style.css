@@ -199,6 +199,17 @@ footer {
   gap: 5px;
 }
 
+.textoquemsomos{
+  display: -webkit-box;
+  font-size: small;
+  text-align: justify;
+  margin-top: 15px;
+  margin-bottom: 2px;
+  margin-left: 100px;
+  margin-right: 100px;
+  -webkit-box-orient: vertical;
+}
+
 
 /* MEDIA QUERY RESPONSIVA */
 @media (max-width: 768px) {

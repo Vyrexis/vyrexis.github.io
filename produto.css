@@ -512,15 +512,15 @@ footer {
   .input-search,
   .botaoanuncio {
     font-size: 18px;
-    width: 90%;
+    width: 95%;
   }
-
+  
   .logo {
     width: 100px;
   }
 
   .divdobotao {
-    margin: 10px auto;
+    margin: 100px auto;
     text-align: center;
   }
 }
