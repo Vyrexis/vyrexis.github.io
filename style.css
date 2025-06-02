@@ -18,7 +18,7 @@ body {
 
 main {
   flex: 1;
-  background-color: white;
+  background-color: beige;
   padding: 30px;
 }
 
@@ -111,15 +111,15 @@ footer {
 } */
 
 /* I: links de navegação */
-/* .a1 {
+.a1 {
   color: white;
   text-decoration: none;
   transition: 0.8s ease;
-} */
-/* 
+}
+
 .a1:hover {
   text-decoration: underline;
-} */
+}
 
 .divdosbotoes{
   display: flex;
