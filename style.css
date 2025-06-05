@@ -244,7 +244,7 @@ footer {
 
 
 /* MEDIA QUERY RESPONSIVA */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .cabecario,
   .navegacao {
     flex-direction: column;
@@ -252,24 +252,25 @@ footer {
     gap: 10px;
   }
 
-  .navegacao {
+  .divdosbotoes {
+    position: relative;
     font-size: 20px;
     text-align: center;
+    margin-top: 50px;
+    left: 20px;
+    right: 20px;
   }
-
-  .pesquisa input,
-  .input-search,
-  .botaoanuncio {
-    font-size: 18px;
-    width: 90%;
-  }
-
+  
   .logo {
     width: 100px;
   }
 
+  .botaosugerir{
+    margin-top: 10px;
+  }
+
   .divdobotao {
-    margin: 10px auto;
+    margin: 100px auto;
     text-align: center;
   }
 }

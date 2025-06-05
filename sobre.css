@@ -190,40 +190,34 @@ footer {
   gap: 5px;
 }
 
-/* KI: MEDIA QUERY RESPONSIVA */
+/* MEDIA QUERY RESPONSIVA */
 @media (max-width: 750px) {
-  .cabecario{
-    flex-direction: column;
+  .cabecario,
+  .navegacao {
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 10px;
   }
 
-  .navegacao{
-    margin-top: 15px;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .navegacao {
+  .divdosbotoes {
+    position: relative;
     font-size: 20px;
     text-align: center;
+    margin-top: 50px;
+    left: 20px;
+    right: 20px;
   }
-
-  .pesquisa input,
-  .input-search,
-  .botaoanuncio {
-    font-size: 18px;
-    width: 90%;
-    margin-left: 10px;
-  }
-
+  
   .logo {
     width: 100px;
   }
 
+  .botaosugerir{
+    margin-top: 10px;
+  }
+
   .divdobotao {
-    margin: 10px auto;
+    margin: 100px auto;
     text-align: center;
   }
 }
